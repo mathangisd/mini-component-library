@@ -46,13 +46,13 @@ const ProgressBar = ({ value, size }) => {
     aria-valuemin={0}
     aria-valuemax={100}
     aria-label="loadinglabel">
+      <VisuallyHidden>{value}%</VisuallyHidden>
     </ProgressValue>
   </Component>;
 };
 
 
 const ProgressWrapperBase = styled.div`
-  width: 370px;
   border-radius: 4px;
   background-color: ${COLORS.transparentGray15};
   box-shadow: inset 0px 2px 4px ${COLORS.transparentGray35};
